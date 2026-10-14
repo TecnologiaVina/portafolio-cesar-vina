@@ -3,7 +3,7 @@
 
   var root = document.documentElement;
 
-  // Tema claro/oscuro
+  // ===== Tema claro/oscuro =====
   var THEME_KEY = "cv-theme";
   var stored = null;
   try { stored = localStorage.getItem(THEME_KEY); } catch (e) {}
@@ -20,7 +20,7 @@
     });
   }
 
-  // Menú móvil
+  // ===== Menú móvil =====
   var navToggle = document.querySelector(".nav-toggle");
   var navMenu = document.getElementById("nav-menu");
   if (navToggle && navMenu) {
@@ -37,17 +37,19 @@
     });
   }
 
-  // Año dinámico
+  // ===== Año dinámico =====
   var year = document.getElementById("year");
   if (year) { year.textContent = new Date().getFullYear(); }
 
-  // Animación de aparición al hacer scroll
-  var revealTargets = document.querySelectorAll(".section, .hero-grid, .timeline-item, .skill-card, .edu-card, .contact-card");
+  // ===== Animación de aparición al hacer scroll =====
+  var revealTargets = document.querySelectorAll(
+    ".hero-text, .hero-card, .section-head, .section-sub, .card, .timeline-item, .stats li, .contact-list li, .contact-form, .prose"
+  );
   if ("IntersectionObserver" in window) {
     revealTargets.forEach(function (el) {
       el.style.opacity = "0";
-      el.style.transform = "translateY(16px)";
-      el.style.transition = "opacity .6s ease, transform .6s ease";
+      el.style.transform = "translateY(14px)";
+      el.style.transition = "opacity .55s ease, transform .55s ease";
     });
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -57,7 +59,66 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
     revealTargets.forEach(function (el) { io.observe(el); });
+  }
+
+  // ===== Formulario de contacto =====
+  var EMAIL = "cesarluisvina@gmail.com";
+  var form = document.getElementById("contact-form");
+  if (form) {
+    var statusEl = document.getElementById("form-status");
+    var button = document.getElementById("form-button");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Honeypot anti-spam
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value) { return; }
+
+      if (typeof form.reportValidity === "function" && !form.reportValidity()) { return; }
+
+      var f = form.elements;
+      var payload = {
+        nombre: f.nombre.value.trim(),
+        email: f.email.value.trim(),
+        asunto: f.asunto.value.trim() || "Contacto desde el portafolio",
+        mensaje: f.mensaje.value.trim(),
+        _subject: "Nuevo mensaje desde el portafolio web",
+        _template: "table"
+      };
+
+      var original = button.textContent;
+      button.disabled = true;
+      button.textContent = "Enviando...";
+      statusEl.textContent = "";
+      statusEl.className = "form-status";
+
+      fetch("https://formsubmit.co/ajax/" + EMAIL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) {
+          if (!res.ok) { throw new Error("HTTP " + res.status); }
+          return res.json();
+        })
+        .then(function () {
+          form.reset();
+          statusEl.textContent = "¡Gracias! Tu mensaje fue enviado. Te responderé lo antes posible.";
+          statusEl.className = "form-status ok";
+        })
+        .catch(function () {
+          statusEl.innerHTML =
+            'No se pudo enviar en este momento. Escríbeme directamente a ' +
+            '<a href="mailto:' + EMAIL + '">' + EMAIL + "</a>.";
+          statusEl.className = "form-status err";
+        })
+        .then(function () {
+          button.disabled = false;
+          button.textContent = original;
+        });
+    });
   }
 })();
