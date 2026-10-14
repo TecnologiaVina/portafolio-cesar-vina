@@ -43,7 +43,7 @@
 
   // ===== Animación de aparición al hacer scroll =====
   var revealTargets = document.querySelectorAll(
-    ".hero-text, .hero-card, .section-head, .section-sub, .card, .timeline-item, .stats li, .contact-list li, .contact-form, .prose"
+    ".hero-text, .hero-card, .section-head, .section-sub, .card, .project-card, .timeline-item, .stats li, .contact-list li, .contact-form, .prose"
   );
   if ("IntersectionObserver" in window) {
     revealTargets.forEach(function (el) {
