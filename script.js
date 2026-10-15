@@ -64,7 +64,7 @@
   }
 
   // ===== Formulario de contacto =====
-  var EMAIL = "cesarluisvina@gmail.com";
+  var FORM_ID = "37803f6e85acc886daad70623d1da52e";
   var form = document.getElementById("contact-form");
   if (form) {
     var statusEl = document.getElementById("form-status");
@@ -95,7 +95,7 @@
       statusEl.textContent = "";
       statusEl.className = "form-status";
 
-      fetch("https://formsubmit.co/ajax/" + EMAIL, {
+      fetch("https://formsubmit.co/ajax/" + FORM_ID, {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(payload)
