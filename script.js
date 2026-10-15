@@ -111,8 +111,8 @@
         })
         .catch(function () {
           statusEl.innerHTML =
-            'No se pudo enviar en este momento. Escríbeme directamente a ' +
-            '<a href="mailto:' + EMAIL + '">' + EMAIL + "</a>.";
+            'No se pudo enviar en este momento. Intenta de nuevo o ' +
+            '<a href="https://wa.me/584249672742" target="_blank" rel="noopener noreferrer">escríbeme por WhatsApp</a>.';
           statusEl.className = "form-status err";
         })
         .then(function () {
