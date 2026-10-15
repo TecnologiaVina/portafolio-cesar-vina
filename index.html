@@ -19,11 +19,41 @@
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <ul class="topbar-info">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <a href="mailto:cesarluisvina@gmail.com">cesarluisvina@gmail.com</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.5c.5 3 3 5.5 6 6 .8-.1 1-.6 1.2-1.2l.2-.8-2-1-.9.8c-1-.5-1.9-1.4-2.4-2.4l.8-.9-1-2-.8.2c-.6.2-1.1.6-1.1 1.5Z"/></svg>
+          <a href="https://wa.me/584249672742" target="_blank" rel="noopener noreferrer">+58 424-9672742</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>Maturín, Venezuela · Remoto</span>
+        </li>
+      </ul>
+      <ul class="topbar-social">
+        <li><a href="https://www.linkedin.com/in/cesarluisvina" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 21v-6a3 3 0 0 1 6 0v6h4v-7a5 5 0 0 0-9-3v-2h-4Z"/></svg></a></li>
+        <li><a href="https://github.com/TecnologiaVina" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.8-2.4 4.6-4.6 4.9.3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></a></li>
+        <li><a href="https://wa.me/584249672742" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3Z"/><path d="M8.5 8.5c.5 3 3 5.5 6 6 .8-.1 1-.6 1.2-1.2l.2-.8-2-1-.9.8c-1-.5-1.9-1.4-2.4-2.4l.8-.9-1-2-.8.2c-.6.2-1.1.6-1.1 1.5Z"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+
   <header class="site-header" id="top">
     <nav class="nav container" aria-label="Navegación principal">
-      <a class="brand" href="#top">CV<span>.dev</span></a>
+      <a class="brand" href="#top" aria-label="César Viña — Inicio">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="8" fill="#0a2547"/><path d="M13 9l-4 7 4 7M19 9l4 7-4 7" fill="none" stroke="#f58220" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">César Viña<span>.dev</span></span>
+      </a>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
@@ -114,11 +144,56 @@
       </div>
     </section>
 
-    <!-- EXPERIENCIA -->
-    <section id="experiencia" class="section section-alt" aria-labelledby="exp-title">
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section section-alt" aria-labelledby="serv-title">
       <div class="container">
         <div class="section-head">
           <span class="section-num">02</span>
+          <h2 id="serv-title">Servicios</h2>
+          <span class="section-rule" aria-hidden="true"></span>
+        </div>
+        <p class="section-sub">Soluciones de software, datos e infraestructura de punta a punta.</p>
+
+        <div class="services-grid">
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+            <h3>Desarrollo Web Full Stack</h3>
+            <p>Aplicaciones web a medida con PHP y Node.js/Express, arquitectura cliente-servidor y código mantenible.</p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span>
+            <h3>APIs REST &amp; Backend</h3>
+            <p>Diseño e integración de APIs REST, lógica de negocio, autenticación y servicios escalables.</p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+            <h3>Bases de Datos</h3>
+            <p>Modelado, administración y optimización de PostgreSQL y MySQL: consultas, respaldos y migraciones.</p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span>
+            <h3>Infraestructura &amp; Soporte TI</h3>
+            <p>Servidores, redes y soporte técnico en Windows Server y GNU/Linux (Ubuntu, Debian).</p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Sistemas de Seguridad</h3>
+            <p>Control de acceso biométrico (ZKTeco, Hikvision) y CCTV: instalación, cableado y configuración.</p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M16.9 16.9l2.1 2.1M2 12h3M19 12h3M4.9 19.1l2.1-2.1M16.9 7.1l2.1-2.1"/></svg></span>
+            <h3>Optimización de Procesos</h3>
+            <p>Automatizo flujos y sistemas internos; por ejemplo, +20% en la eficiencia del proceso de compras.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="section" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">03</span>
           <h2 id="exp-title">Experiencia profesional</h2>
           <span class="section-rule" aria-hidden="true"></span>
         </div>
@@ -174,10 +249,10 @@
     </section>
 
     <!-- PROYECTOS -->
-    <section id="proyectos" class="section" aria-labelledby="proj-title">
+    <section id="proyectos" class="section section-alt" aria-labelledby="proj-title">
       <div class="container">
         <div class="section-head">
-          <span class="section-num">03</span>
+          <span class="section-num">04</span>
           <h2 id="proj-title">Proyectos</h2>
           <span class="section-rule" aria-hidden="true"></span>
         </div>
@@ -256,10 +331,10 @@
     </section>
 
     <!-- HABILIDADES -->
-    <section id="habilidades" class="section section-alt" aria-labelledby="skills-title">
+    <section id="habilidades" class="section" aria-labelledby="skills-title">
       <div class="container">
         <div class="section-head">
-          <span class="section-num">04</span>
+          <span class="section-num">05</span>
           <h2 id="skills-title">Habilidades</h2>
           <span class="section-rule" aria-hidden="true"></span>
         </div>
@@ -311,10 +386,10 @@
     </section>
 
     <!-- FORMACION -->
-    <section id="formacion" class="section" aria-labelledby="edu-title">
+    <section id="formacion" class="section section-alt" aria-labelledby="edu-title">
       <div class="container">
         <div class="section-head">
-          <span class="section-num">05</span>
+          <span class="section-num">06</span>
           <h2 id="edu-title">Formación y cursos</h2>
           <span class="section-rule" aria-hidden="true"></span>
         </div>
@@ -346,7 +421,7 @@
     <section id="contacto" class="section section-dark" aria-labelledby="contact-title">
       <div class="container">
         <div class="section-head">
-          <span class="section-num">06</span>
+          <span class="section-num">07</span>
           <h2 id="contact-title">Contacto</h2>
           <span class="section-rule" aria-hidden="true"></span>
         </div>
