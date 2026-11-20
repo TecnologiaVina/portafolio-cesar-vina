@@ -4,17 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>César Luis Viña Bonillo | Ingeniero de Sistemas & Desarrollador Web Full Stack</title>
-  <meta name="description" content="Portafolio de César Luis Viña Bonillo, Ingeniero de Sistemas y Desarrollador Web Full Stack (PHP, Node.js, Express, PostgreSQL, MySQL). Más de 10 años de experiencia en desarrollo web, bases de datos e infraestructura TI." />
+  <meta name="description" content="Portafolio de César Luis Viña Bonillo, Ingeniero de Sistemas y Desarrollador Web Full Stack (PHP, Node.js/Express, React, PostgreSQL, MySQL). Más de 10 años de experiencia en desarrollo web, bases de datos e infraestructura TI." />
   <meta name="author" content="César Luis Viña Bonillo" />
-  <meta name="keywords" content="Desarrollador Web, Full Stack, PHP, Node.js, Express, PostgreSQL, MySQL, JavaScript, Ingeniero de Sistemas, Backend, Linux" />
+  <meta name="keywords" content="Desarrollador Web, Full Stack, PHP, Node.js, Express, React, PostgreSQL, MySQL, JavaScript, APIs REST, Git, IA generativa, Ingeniero de Sistemas, Backend, Linux" />
+  <link rel="canonical" href="https://portafolio-cesar-vina.onrender.com/" />
+  <meta name="theme-color" content="#0a2547" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="César Luis Viña Bonillo | Desarrollador Web Full Stack" />
-  <meta property="og:description" content="Ingeniero de Sistemas con más de 10 años creando soluciones web robustas: PHP, Node.js/Express, PostgreSQL y MySQL." />
+  <meta property="og:description" content="Ingeniero de Sistemas con más de 10 años creando soluciones web robustas: PHP, Node.js/Express, React, PostgreSQL y MySQL." />
+  <meta property="og:url" content="https://portafolio-cesar-vina.onrender.com/" />
+  <meta property="og:site_name" content="César Viña · Portafolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="César Luis Viña Bonillo | Desarrollador Web Full Stack" />
+  <meta name="twitter:description" content="Ingeniero de Sistemas con más de 10 años creando soluciones web robustas: PHP, Node.js/Express, React, PostgreSQL y MySQL." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%92%BB</text></svg>" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "César Luis Viña Bonillo",
+    "jobTitle": "Ingeniero de Sistemas · Desarrollador Web Full Stack",
+    "url": "https://portafolio-cesar-vina.onrender.com/",
+    "email": "mailto:cesarluisvina@gmail.com",
+    "telephone": "+584249672742",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Maturín",
+      "addressRegion": "Monagas",
+      "addressCountry": "VE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/cesarluisvina",
+      "https://github.com/TecnologiaVina"
+    ],
+    "knowsAbout": ["PHP", "Node.js", "Express.js", "React", "PostgreSQL", "MySQL", "JavaScript", "WordPress", "APIs REST", "Git"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -83,8 +112,8 @@
           <p class="lead">
             Más de <strong>10 años</strong> transformando necesidades de negocio en
             soluciones web robustas y escalables con <strong>PHP</strong>,
-            <strong>Node.js/Express</strong>, <strong>PostgreSQL</strong> y
-            <strong>MySQL</strong>.
+            <strong>Node.js/Express</strong>, <strong>React</strong>,
+            <strong>PostgreSQL</strong> y <strong>MySQL</strong>.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contacto">Contáctame</a>
@@ -103,9 +132,9 @@
             <span class="chip">PHP</span>
             <span class="chip">Node.js</span>
             <span class="chip">Express</span>
+            <span class="chip">React</span>
             <span class="chip">PostgreSQL</span>
             <span class="chip">MySQL</span>
-            <span class="chip">JavaScript</span>
           </div>
         </aside>
       </div>
@@ -131,8 +160,13 @@
             <p>
               Un ejemplo concreto de mi enfoque a resultados: implementé un sistema de
               contrataciones que <strong>incrementó en un 20% la eficiencia del proceso
-              de compras</strong> de la empresa. También tengo experiencia en sistemas
-              biométricos (Hikvision, ZKTeco), redes informáticas y soporte técnico.
+              de compras</strong> de la empresa. En 2025–2026 desarrollé el
+              <a href="https://marketplace.tem-go.com" target="_blank" rel="noopener noreferrer">marketplace de Temgo</a>,
+              su <a href="https://servicios.tem-go.com" target="_blank" rel="noopener noreferrer">sitio de servicios</a>
+              y el sitio de <a href="https://tecanver.tem-go.com" target="_blank" rel="noopener noreferrer">Tecanver</a>,
+              integrando IA generativa en el diseño para acelerar las entregas. También
+              tengo experiencia en sistemas biométricos (Hikvision, ZKTeco), redes
+              informáticas y soporte técnico.
             </p>
           </div>
           <ul class="stats">
@@ -200,23 +234,36 @@
         <ol class="timeline">
           <li class="timeline-item">
             <div class="timeline-head">
+              <h3>Freelancer (remoto)</h3>
+              <span class="timeline-when">2025 – 2026</span>
+            </div>
+            <p class="timeline-where">Temgo · Venezuela (remoto)</p>
+            <ul>
+              <li>Desarrollo del <a href="https://marketplace.tem-go.com" target="_blank" rel="noopener noreferrer">marketplace de Temgo</a> con Node.js/Express, React y MySQL, incluyendo API REST e interfaz de usuario.</li>
+              <li>Desarrollo del <a href="https://servicios.tem-go.com" target="_blank" rel="noopener noreferrer">sitio de servicios de Temgo</a> con React.</li>
+              <li>Desarrollo del <a href="https://tecanver.tem-go.com" target="_blank" rel="noopener noreferrer">sitio web de Tecanver</a> en PHP, como servicio ofrecido a través de Temgo.</li>
+              <li>Integración de IA generativa en el diseño y desarrollo de los tres proyectos, optimizando tiempos de entrega y la personalización visual para cada cliente.</li>
+            </ul>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-head">
               <h3>Analista de Sistemas</h3>
               <span class="timeline-when">2021 – 2024</span>
             </div>
             <p class="timeline-where">Incivys Group C.A. · El Callao, Edo. Bolívar</p>
             <ul>
-              <li>Diseñé y desarrollé aplicaciones web personalizadas (PHP, MySQL, PostgreSQL, Node.js, Express, JavaScript, HTML/CSS) bajo arquitectura cliente-servidor.</li>
-              <li>Implementé sistemas biométricos Hikvision —cableado, instalación y configuración avanzada— con SADP e iVMS 4120ac.</li>
+              <li>Desarrollo full stack de aplicaciones web a medida (PHP, MySQL, PostgreSQL, Node.js, Express, JavaScript, HTML/CSS) bajo arquitectura cliente-servidor.</li>
+              <li>Implementación de sistemas biométricos Hikvision (cableado, instalación y configuración avanzada) con SADP e iVMS 4120ac.</li>
             </ul>
           </li>
           <li class="timeline-item">
             <div class="timeline-head">
-              <h3>Desarrollador Web Independiente</h3>
+              <h3>Freelancer (remoto)</h3>
               <span class="timeline-when">2021</span>
             </div>
             <p class="timeline-where">Best Asset Recovery · EE. UU. (remoto)</p>
             <ul>
-              <li>Rediseñé la interfaz y adapté a arquitectura multisitio <a href="https://bestassetrecovery.com/" target="_blank" rel="noopener noreferrer">bestassetrecovery.com</a> (WordPress), mejorando su presencia digital y usabilidad.</li>
+              <li>Rediseño de interfaz y migración a arquitectura multisitio de <a href="https://www.bestassetrecovery.com/" target="_blank" rel="noopener noreferrer">bestassetrecovery.com</a> (WordPress), con mejora de la presencia digital y la usabilidad.</li>
             </ul>
           </li>
           <li class="timeline-item">
@@ -226,11 +273,12 @@
             </div>
             <p class="timeline-where">Minerven C.A. · El Callao, Edo. Bolívar</p>
             <ul>
-              <li>Diseñé, desarrollé y mantuve aplicaciones web y de escritorio (PHP, PostgreSQL, MySQL, Visual Basic, JavaScript, jQuery, CSS, Joomla).</li>
-              <li>Desarrollé el sistema de solicitudes y contrataciones que <strong>incrementó la eficiencia del proceso de compras en un 20%</strong>.</li>
-              <li>Administré servidores y bases de datos, garantizando disponibilidad y respaldo de la información.</li>
-              <li>Instalé y configuré sistemas biométricos ZKTeco para control de acceso y asistencia del personal.</li>
-              <li>Gestioné soporte técnico y mejoras de conectividad y red entre departamentos.</li>
+              <li>Desarrollo y mantenimiento de aplicaciones web y de escritorio (PHP, PostgreSQL, MySQL, Visual Basic, JavaScript, jQuery, CSS, Joomla).</li>
+              <li>Creación del sistema de solicitudes y contrataciones que <strong>incrementó en 20% la eficiencia del proceso de compras</strong>.</li>
+              <li>Administración de servidores y bases de datos, garantizando disponibilidad y respaldo de la información.</li>
+              <li>Implementación de sistemas biométricos ZKTeco para control de acceso y asistencia del personal.</li>
+              <li>Soporte técnico y atención a usuarios, con optimización de la conectividad y la red entre departamentos.</li>
+              <li>Soporte al equipo de telecomunicaciones en la configuración de frecuencias de radio.</li>
             </ul>
           </li>
           <li class="timeline-item">
@@ -240,8 +288,8 @@
             </div>
             <p class="timeline-where">CVG-MINERVEN · Venezuela</p>
             <ul>
-              <li>Desarrollé el Sistema de Registro y Control de Visitas bajo software libre.</li>
-              <li>Colaboré en la migración e implantación de máquinas virtuales (VirtualBox).</li>
+              <li>Desarrollo del Sistema de Registro y Control de Visitas bajo software libre.</li>
+              <li>Participación en la migración e implantación de máquinas virtuales (VirtualBox) junto al departamento de Soporte Técnico.</li>
             </ul>
           </li>
         </ol>
@@ -262,15 +310,43 @@
 
           <article class="card project-card">
             <div class="project-head">
-              <h3>Market Place App</h3>
-              <span class="badge badge-live">Ver proyecto</span>
+              <h3>Marketplace Temgo</h3>
+              <span class="badge badge-live">En vivo</span>
             </div>
-            <p class="project-desc">Aplicación web con API REST para la compra y venta directa entre proveedores.</p>
+            <p class="project-desc">Aplicación web para la compra y venta directa entre proveedores, con API REST en Node.js/Express y frontend en React.</p>
             <ul class="tag-list">
-              <li>JavaScript</li><li>Node.js</li><li>REST API</li>
+              <li>Node.js</li><li>Express</li><li>React</li><li>MySQL</li><li>REST API</li>
             </ul>
             <div class="project-links">
-              <a class="project-link" href="https://marketplace.tem-go.com" target="_blank" rel="noopener noreferrer">Ver demo <span aria-hidden="true">↗</span></a>
+              <a class="project-link" href="https://marketplace.tem-go.com" target="_blank" rel="noopener noreferrer">Ver proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-head">
+              <h3>Servicios Temgo</h3>
+              <span class="badge badge-live">En vivo</span>
+            </div>
+            <p class="project-desc">Sitio de servicios de Temgo desarrollado con React, con diseño responsive y secciones de presentación y contacto.</p>
+            <ul class="tag-list">
+              <li>React</li><li>JavaScript</li><li>CSS3</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://servicios.tem-go.com" target="_blank" rel="noopener noreferrer">Ver proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-head">
+              <h3>Tecanver</h3>
+              <span class="badge badge-live">En vivo</span>
+            </div>
+            <p class="project-desc">Sitio corporativo de Tecanver Multiservicios (ascensores y escaleras mecánicas), desarrollado en PHP y entregado como servicio a través de Temgo.</p>
+            <ul class="tag-list">
+              <li>PHP</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+            <div class="project-links">
+              <a class="project-link" href="https://tecanver.tem-go.com" target="_blank" rel="noopener noreferrer">Ver proyecto <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
@@ -319,7 +395,7 @@
           <article class="card">
             <h3>Lenguajes &amp; Frameworks</h3>
             <ul class="tag-list">
-              <li>PHP</li><li>JavaScript</li><li>Node.js</li><li>Express.js</li>
+              <li>PHP</li><li>JavaScript</li><li>React.js</li><li>Node.js</li><li>Express.js</li>
               <li>HTML5</li><li>CSS3</li><li>jQuery</li><li>JSON</li><li>Visual Basic 6</li>
             </ul>
           </article>
@@ -340,8 +416,8 @@
           <article class="card">
             <h3>Herramientas</h3>
             <ul class="tag-list">
-              <li>WordPress</li><li>Joomla</li><li>Crystal Reports</li><li>FPDF</li>
-              <li>FTP</li><li>iVMS 4120ac</li><li>SADP</li><li>Photoshop</li><li>GIMP</li>
+              <li>Git/GitHub</li><li>WordPress</li><li>Joomla</li><li>Crystal Reports</li><li>FPDF</li>
+              <li>FTP</li><li>iVMS 4120ac</li><li>SADP</li><li>IA generativa</li><li>Photoshop</li><li>GIMP</li>
             </ul>
           </article>
           <article class="card">
